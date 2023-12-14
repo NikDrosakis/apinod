@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="IU-233.11799.241">
+    <data-source name="spduk_5800@localhost" uuid="97b80745-ddfc-4f2f-8d11-ab342f0698b1">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MARIADB" exact-version="0" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>nikosd</user-name>
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>

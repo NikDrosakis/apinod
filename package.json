@@ -1,0 +1,46 @@
+{
+  "name": "nodapi",
+  "version": "1.2.0",
+  "description": "1) express dynamic routing GET, POST, DELETE 2) maria basic functions files 3) mysql data with schema /database/table/where (=1/<1000, etc) 4) databases supported: mysql, redis, mongo 5) AUTHENTICATION primary level (NOT REST) 6) shell exec (use with CURL PHP) php2mongo.sh 7) cron.js running at 3004",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon start index.js"
+  },
+  "keywords": [],
+  "author": "NikDrosakis",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "chokidar": "^3.5.2",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "*",
+    "cron": "^2.3.0",
+    "express": "^4.18.2",
+    "express2": "^5.15.3",
+    "fastify": "^3.22.1",
+    "forever-monitor": "^3.0.3",
+    "ip": "^1.1.5",
+    "loglevel": "^1.7.1",
+    "mariadb": "^2.5.2",
+    "marked-images": "^3.0.0",
+    "nodemon": "^3.0.2",
+    "os": "^0.1.2",
+    "pm2": "*",
+    "util": "^0.12.4",
+    "web-push": "^3.4.5"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikDrosakis/multidb-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NikDrosakis/multidb-api/issues"
+  },
+  "homepage": "https://github.com/NikDrosakis/multidb-api#readme"
+}

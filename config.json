@@ -1,0 +1,442 @@
+{
+"domain":"localhost",
+"app":"1",
+"uri":"https://localhost",
+"mother":"https://stage.britishsupernetwork.co.uk",		
+"whitelist":["http://localhost:3000","http://stage.britishsupernetwork.co.uk","http://stage.realestatesupernetwork.co.uk","https://stage.homeloanssupernetwork.co.uk","http://speedemployer.co.uk","http://192.168.2.7"],
+"mongoconnect":"mongodb://nikosd:UpvMy@0.0.0.0:27017/spduk?authMechanism=SCRAM-SHA-1&authSource=admin",
+"httpsport": "3008",
+"port": "3008",
+"httpport": "3001",
+"mo":{
+	"url":"mongodb://nikosd:UpvMy@0.0.0.0:27017/spduk",
+	"db":"spduk_5800"
+},
+"dbs":{"mo":"mongo2","ma":"maria","red":"redis"},
+"fs":"php",
+"family":"child",
+"host":"localhost",
+"subdomain":"stage",
+"children":{
+	"1":"https://localhost",
+	"2":"https://localhost",
+	"3":"https://localhost",
+	"4":"https://localhost",
+	"5":"https://localhost",
+	"6":"https://localhost",
+	"7":"https://localhost",
+	"8":"https://localhost",
+	"9":"https://stage.realestatesupernetwork.co.uk",
+	"10":"https://stage.homeloanssupernetwork.co.uk"
+},
+"SITE_URL":"https://localhost/",
+"mother":"https://stage.britishsupernetwork.co.uk",
+"apiuri":"https://localhost/api/",
+"wsuri":"wss://localhost:3011/",
+"cronuri":"https://localhost:3009/",
+"iouri":"https://localhost:3010/index.html?roomid=",
+"title":"stage.speedemployer UK Network",
+"maria": "nd_portfolio",	
+"mariadash": "spdukdash",	
+"mariauser": "nikosd",	
+"mariapass": "UpvMy",	
+"mongo": "spduk",	
+"redis": "3",	
+"redispass": "yjF1f7uiHttcp",	
+"uploads": "/uploads/",	
+"UPLOADS": "/uploads/",	
+"uploads_icon": "/uploads/thumbs/",	
+"uploads_rootpath": "/var/www/ukloads/",	
+"uploads_rootpath_icon": "/var/www/ukloads/thumbs/",	
+"api_port":"3008",
+"cron_port":"3009",
+"io_port":"3010",
+"ws_port":"3011",
+"DOM_EXT":"co.uk",
+"LOC":"uk",
+"startingmonth":"2023-06",
+"startingdate":"2023-06-21",
+"ip": "213.175.208.229",
+"socketMessageEvent": "stage SpeedemployerUKStreaming",
+"socketCustomEvent": "stage SpeedemployerUKStreaming",
+"socketURL":"https://localhost:3010/",
+"enableLogs": "false",
+"autoRebootServerOnFailure": "false",
+"isUseHTTPs": "true",  
+"dirPath": "./io",
+"sslKey": "/etc/letsencrypt/live/localhost/privkey.pem",
+"sslCert": "/etc/letsencrypt/live/localhost/fullchain.pem",
+"sslCabundle": "",
+"enableAdmin": "true",
+"adminUserName": "nikosd",
+"adminPassword": "130177",
+"pages": {
+    "dash": {
+      "alias": "Dashboard",
+      "visible": 1,
+      "subs": {
+        "main": {
+          "file": "dash.php",
+          "alias": "Main Page"
+        }
+      }
+    },
+    "ads": {
+      "alias": "Ads",
+      "visible": 0,
+      "subs": {
+        "bar": {
+          "mod": "ads",
+          "file": "views/bar",
+          "alias": "Ads Bar"
+        },
+        "customers": {
+          "mod": "ads",
+          "file": "views/customer",
+          "alias": "Customers"
+        },
+        "pricing": {
+          "mod": "ads",
+          "file": "views/pricing",
+          "alias": "Pricing"
+        },
+        "history": {
+          "mod": "ads",
+          "file": "ads.php",
+          "alias": "History"
+        },
+        "setting": {
+          "mod": "ads",
+          "file": "ads.php",
+          "alias": "Setting"
+        }
+      }
+    },
+    "fieldmarshal": {
+      "alias": "Fieldmarshal",
+      "visible": 1,
+      "subs": {
+        "forms": {
+          "file": "globs/forms.php",
+          "alias": "Global Form Data"
+        },
+        "membership": {
+          "file": "mship.php",
+          "alias": "Membership"
+        },
+        "services": {
+          "file": "store.php",
+          "alias": "Services/Payment"
+        },
+        "interviews": {
+          "file": "report/pages/interviews.php",
+          "alias": "Interviews"
+        },
+        "dglobals": {
+          "file": "globs/view.php",
+          "alias": "Default Globals"
+        },
+        "agent_report": {
+          "file": "agent_report.php",
+          "alias": "Agent report"
+        },
+        "certified_report": {
+          "file": "certified_report.php",
+          "alias": "Certified report"
+        },
+        "pending_report": {
+          "file": "pending_report.php",
+          "alias": "Pending report"
+        },
+        "permissions": {
+          "file": "permissions.php",
+          "alias": "Permissions"
+        },
+        "request_report": {
+          "file": "request_report.php",
+          "alias": "Request report"
+        },
+        "stats": {
+          "file": "stats.php",
+          "alias": "Front page - Stats"
+        }
+      }
+    },
+    "manager": {
+      "alias": "Manager",
+      "visible": 1,
+      "subs": {
+        "": {
+          "file": "manager.php",
+          "alias": "Manager"
+        },
+        "invoices": {
+          "file": "invoices.php",
+          "alias": "All transactions"
+        },
+        "logistis": {
+          "file": "logistis.php",
+          "alias": "Logistis"
+        },
+        "revenue": {
+          "file": "report/pages/revenue.php",
+          "alias": "Revenue"
+        },
+        "revenue2": {
+          "file": "report/pages/revenue2",
+          "alias": "Revenue Services"
+        },
+        "industries": {
+          "file": "report/pages/industries.php",
+          "alias": "Industries"
+        },
+        "report": {
+          "file": "report/pages/report.php",
+          "alias": "Report"
+        },
+        "subclassifs": {
+          "file": "report/pages/subclassifs.php",
+          "alias": "Subclassifs"
+        },
+        "userlogs": {
+          "file": "userlogs.php",
+          "alias": "Userlogs Ticketing"
+        }
+      }
+    },
+    "sa": {
+      "alias": "System Admin",
+      "visible": 0,
+      "subs": {
+        "cron": {
+          "file": "cron/view.php",
+          "alias": "Cron"
+        },
+        "doc": {
+          "file": "pages/doc",
+          "alias": "Error Doc"
+        },
+        "control": {
+          "file": "pages/control",
+          "alias": "Control"
+        },
+        "patch": {
+          "file": "pages/patch",
+          "alias": "Patching"
+        },
+        "shell": {
+          "file": "pages/shell",
+          "alias": "Shell"
+        },
+        "report": {
+          "file": "report/pages/report.php",
+          "alias": "Reporting"
+        },
+        "maild": {
+          "file": "maild/view.php",
+          "alias": "Mailserver"
+        },
+        "rule": {
+          "mod": "rule",
+          "file": "view",
+          "alias": "Rule"
+        },
+        "sim": {
+          "file": "view",
+          "alias": "Simulate"
+        },
+        "json": {
+          "file": "pages/json",
+          "alias": "JSON"
+        }
+      }
+    },
+    "local": {
+      "alias": "Local",
+      "visible": 1,
+      "subs": {
+        "interface": {
+          "file": "dic/pages/interface.php",
+          "alias": "Interface"
+        },        
+		"pg": {
+          "file": "dic/pages/pg.php",
+          "alias": "Postgres"
+        },
+        "html_locals": {
+          "file": "dic/pages/html_locals.php",
+          "alias": "HTML Locals"
+        },
+        "location": {
+          "file": "dic/pages/location.php",
+          "alias": "Location"
+        },
+        "classifs": {
+          "file": "dic/pages/classifs.php",
+          "alias": "Classifs"
+        },
+        "buscat": {
+          "file": "dic/pages/buscat.php",
+          "alias": "Bus Cat"
+        },
+        "edu": {
+          "file": "dic/pages/edu.php",
+          "alias": "Education"
+        },
+        "edu_depa": {
+          "file": "dic/pages/edu_depa.php",
+          "alias": "Education Dep"
+        },
+        "langs": {
+          "file": "dic/pages/langs.php",
+          "alias": "Langs"
+        },
+        "export": {
+          "file": "dic/pages/export.php",
+          "alias": "Export"
+        }
+      }
+    },
+    "seo": {
+      "alias": "SEO",
+      "visible": 1,
+      "subs": {
+        "metatags": {
+          "file": "seo/pages/metatags.php",
+          "alias": "Metatags"
+        },
+        "gmetatags": {
+          "file": "seo/pages/gmetatags.php",
+          "alias": "GMetatags"
+        },
+        "xml": {
+          "file": "seo/pages/xml.php",
+          "alias": "XML"
+        },
+        "analytics": {
+          "file": "seo/pages/analytics.php",
+          "alias": "Analytics"
+        }
+      }
+    },
+    "proactivated": {
+      "alias": "Proactivated",
+      "visible": 1,
+      "subs": {
+        "main": {
+          "mod": "proactivated",
+          "file": "pro.php",
+          "alias": "Main Page"
+        }
+      }
+    },
+    "support": {
+      "alias": "Support",
+      "visible": 1,
+      "subs": {
+        "board": {
+          "file": "tktboard.php",
+          "alias": "Board"
+        },
+        "history": {
+          "file": "tkthistory.php",
+          "alias": "History"
+        }
+      }
+    },
+    "user": {
+      "alias": "User",
+      "visible": 1,
+      "subs": {
+        "board": {
+          "file": "user.php",
+          "alias": "Board"
+        },
+        "cv": {
+          "file": "views/user/cv.php",
+          "alias": "CV"
+        },
+        "post": {
+          "file": "views/user/post.php",
+          "alias": "POSTS"
+        },
+        "loan": {
+          "file": "views/user/loan.php",
+          "alias": "LOANS"
+        },
+        "offer": {
+          "file": "views/user/offer.php",
+          "alias": "B2B"
+        },
+        "prop": {
+          "file": "views/user/prop.php",
+          "alias": "PROPERTY"
+        },
+        "gallery": {
+          "file": "user.php",
+          "alias": "Gallery"
+        }
+      }
+    },
+    "profile": {
+      "alias": "My profile",
+      "visible": 0,
+      "subs": {
+        "main": {
+          "file": "profile.php",
+          "alias": "Main Page"
+        }
+      }
+    },
+    "doc": {
+      "alias": "Documentation",
+      "visible": 0,
+      "subs": {
+        "main": {
+          "file": "doc.php",
+          "alias": "Main Page"
+        }
+      }
+    },
+    "collected": {
+      "alias": "Collected Agents",
+      "visible": 1,
+      "subs": {
+        "main": {
+          "file": "collected.php",
+          "alias": "List"
+        }
+      }
+    },
+    "admiral": {
+      "alias": "Admiral",
+      "visible": 1,
+      "subs": {
+        "list": {
+          "file": "list.php",
+          "alias": "Company List"
+        },
+        "affiliate_employee": {
+          "file": "affiliate_employee.php",
+          "alias": "Affiliate employee"
+        },
+        "affiliate_invoices": {
+          "file": "affiliate_employee.php",
+          "alias": "External Affiliate invoices"
+        },
+        "collection_fees": {
+          "file": "collection_fees.php",
+          "alias": "Agent Collection fees"
+        },
+        "rejected": {
+          "file": "collection_fees.php",
+          "alias": "Rejected Agents of Service Pack"
+        },
+        "superboard": {
+          "file": "superboard_page.php",
+          "alias": "Superuser Board"
+        }
+      }
+    }
+  }
+}
